@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Justified</title>
+	<link rel="shortcut icon" href="http://cdn.shopify.com/s/files/1/0185/5092/products/persons-0108.png?v=1369543778">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<script src="test.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<!-- <script>
+	// 	function changePicture(){
+	// 		alert($('#options').val());
+	// 		$("#picHolder").attr('src', $('#options').val() + '.png');
+	// 	}
+	// </script> -->
+</head>
+<body id = "grad">
+
+	<!-- Start of first page -->
+	<div data-role="page" id="home">
+
+		<!--NAVIGATION BAR-->
+		<div data-role="header" id = "fixed-home">
+			<p id = "heading1">JUSTIFIED</p>
+			<ul>
+					<li><a href = "#home" id = "nav-element-1" onclick="goToHome();">HOME</a></li>
+					<li><a href = "#about" id = "nav-element-2" onclick="goToAbout();">ABOUT</a></li>
+			</ul>
+		</div>
+
+		<!--CONTENT-->
+		<div data-role="content" id = "content">
+
+			<div style = "width: 100%; height: auto; padding: 0; margin: 0; display: inline-block">
+
+				<div id = "input">
+			    	<h3 style = "font-family: 'Oswald', sans-serif; font-size: 25px; color: #008060;">ENTER YOUR TEXT HERE:</h3>
+			        <textarea id = "text"></textarea>
+			    </div>
+
+			    <div id = "keydiv">
+			    	<div id = "key">	
+			    		<h3 style = "font-family: 'Oswald', sans-serif; font-size: 25px; color: #FFFFFF; font-style: italic;">TOTAL:</h3>
+			    		<p id = "count">0</p>
+			    		<br>
+			    		<div style = "padding-left: 15%">
+			    			<div id = "button" onclick = "printList()">SUBMIT</div>
+			    		</div>
+			    	</div>
+			    </div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div data-role="page" id="about" style="display:none;">
+
+		<!--NAVIGATION BAR-->
+		<div data-role="header" id = "fixed-home">
+			<p id = "heading1">JUSTIFIED</p>
+			<ul>
+					<li><a href = "#home" id = "nav-element-1" onclick="goToHome();">HOME</a></li>
+					<li><a href = "#about" id = "nav-element-2" onclick="goToAbout();">ABOUT</a></li>
+			</ul>
+		</div>
+
+		<!--CONTENT-->
+		<div data-role="content" id = "content">
+
+			<div style = "width: 100%; height: auto; padding: 0; margin: 0; display: inline-block">
+
+				<div id = "input">
+			    	<h3 style = "font-family: 'Oswald', sans-serif; font-size: 30px; color: #008060;">ABOUT:</h3>
+			        <div id = "abouttextbox">
+			        	<p id = "abouttext">
+			        		"It hit me that there was something about the word I didn't like. It was a 'permission' word, in a way, a warm-up to a request, an apology for interrupting, a shy knock on a door before asking 'Can I get something I need from you?' 
+			        		<br>
+			        		<br>
+			        		The more I thought about it, the more I realized that it was a 'child' word, to riff Transactional Analysis. As such it put the conversation partner into the 'parent' position, granting them more authority and control. And that just didn't make sense. 
+			        		<br>
+			        		<br>
+			        		I am all about respectful communication. Yet I began to notice that just wasn't about being polite: It was a subtle message of subordination, of deference. Sometimes it was self-effacing. Sometimes even duplicitous. As I started really listening, I realized that striking it from a phrase almost always clarified and strengthened the message."
+			        		<br>
+			        		<br>
+			        		- Ellen Petry Leanse
+			        	</p>
+
+			        </div>
+			    </div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
