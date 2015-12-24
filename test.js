@@ -4,9 +4,10 @@ var printList = function(){
     console.log(splitText);
     var count = 0;
     for (var i = 0; i < splitText.length; i++) {
-      if (splitText[i] == "just" || splitText[i] == "Just") {
-        count++;        }
+        if (splitText[i] == "just" || splitText[i] == "Just" || splitText[i] == "JUST" || splitText[i] == "JUst" || splitText[i] == "JUSt" || splitText[i] == "JuST" || splitText[i] == "jUST" || splitText[i] == "JuSt" || splitText[i] == "JusT" ||) {
+        count++;       
       }
+    }
     console.log(count);
     document.getElementById("count").innerHTML = count
 }
